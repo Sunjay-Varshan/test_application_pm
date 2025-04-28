@@ -1,0 +1,16 @@
+python-dotenv==1.0.1
+botbuilder-core>=4.16.2
+aiohttp>=3.10.5
+gunicorn==23.0.0
+requests
+teams-ai>=1.4.0,<2.0.0
+botbuilder-integration-aiohttp
+pyodbc
+langchain
+langchain-community
+langchain-core
+langchain-openai
+langgraph
+azure-identity
+azure-search-documents
+azure-data-tables
