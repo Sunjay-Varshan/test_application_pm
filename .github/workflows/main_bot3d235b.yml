@@ -31,6 +31,9 @@ jobs:
 
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=src" >> $GITHUB_ENV
+      
+      - name: Change working directory
+        run: cd src
         
       - name: Install dependencies
         run: pip install -r requirements.txt
