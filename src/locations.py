@@ -1,7 +1,7 @@
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from config import Config
+from src.config import Config
 
 config = Config()
 

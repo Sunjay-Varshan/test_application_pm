@@ -9,13 +9,13 @@ from teams.ai.data_sources import DataSource
 from teams.state.state import TurnContext
 from teams.state.memory import Memory
 from langchain_community.callbacks import get_openai_callback
-from custom_toolkit import SQLDatabaseToolkit
+from src.custom_toolkit import SQLDatabaseToolkit
  
-from email_extract import get_user_email
-from vector_sql_search import retrieve_docs
-from locations import autherized_locations
-from sqlagentprompt import SQL_AGENT_PROMPT
-from config import Config
+from src.email_extract import get_user_email
+from src.vector_sql_search import retrieve_docs
+from src.locations import autherized_locations
+from src.sqlagentprompt import SQL_AGENT_PROMPT
+from src.config import Config
  
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

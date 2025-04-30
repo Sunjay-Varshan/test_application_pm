@@ -2,7 +2,7 @@ from azure.data.tables import TableServiceClient, TableEntity,UpdateMode
 from azure.core.credentials import AzureNamedKeyCredential
 import uuid
 
-from config import Config
+from src.config import Config
 config = Config()
 
 credential = AzureNamedKeyCredential(config.COSMOS_ACCOUNT_NAME, config.COSMOS_ACCOUNT_KEY)

@@ -17,7 +17,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_community.utilities.sql_database import SQLDatabase
 from langchain_core.tools import BaseTool
 from langchain_community.tools.sql_database.prompt import QUERY_CHECKER
-from query_prompt import CUSTOM_QUERY_CHECKER
+from src.query_prompt import CUSTOM_QUERY_CHECKER
 
 class BaseSQLDatabaseTool(BaseModel):
     """Base tool for interacting with a SQL database."""

@@ -1,7 +1,7 @@
 from langchain_openai import AzureOpenAIEmbeddings
 from langchain_community.vectorstores.azuresearch import AzureSearch
 
-from config import Config
+from src.config import Config
 config = Config()
 
 AZURESEARCH_FIELDS_CONTENT = config.AZURESEARCH_FIELDS_CONTENT

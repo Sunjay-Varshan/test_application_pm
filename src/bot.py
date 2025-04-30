@@ -12,8 +12,8 @@ from teams.ai.prompts import PromptManager, PromptManagerOptions
 from teams.state import TurnState
 from teams.feedback_loop_data import FeedbackLoopData
 
-from my_data_source import MyDataSource
-from config import Config
+from src.my_data_source import MyDataSource
+from src.config import Config
 
 config = Config()
 
@@ -28,7 +28,7 @@ model = OpenAIModel(
     )
 )
     
-prompts = PromptManager(PromptManagerOptions(prompts_folder=f"{os.getcwd()}/prompts"))
+prompts = PromptManager(PromptManagerOptions(prompts_folder=f"{os.getcwd()}/src/prompts"))
 
 my_data_source = MyDataSource('local-search')
 prompts.add_data_source(my_data_source)
